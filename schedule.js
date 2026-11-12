@@ -1,4 +1,5 @@
-export default async function handler(req, res) {
+// 파일 경로: api/schedule.js
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
@@ -121,4 +122,4 @@ export default async function handler(req, res) {
     date: targetDateStr,
     text: outputLines.join('\n')
   });
-}
+};
